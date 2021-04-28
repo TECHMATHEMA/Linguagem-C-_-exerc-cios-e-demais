@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+#include<stdlib.h>
+#include<math.h>
+#include<locale.h>
+
+main(){
+	char A,D,G;
+	float capacidade_tanque,preco;
+	printf("\n\a\nQual o tipo de combustivel ?\n\a\n");
+	scanf("%c",&A);
+	scanf("%c",&D);
+	scanf("%c",&G);
+	printf("\n Alcool=%c\n",A);
+	printf("\n Diesel=%c\n",D);
+	printf("\n Gasolina=%c\n",G);
+	printf("\n\a\nQuantos litros?");
+	scanf("%f",&capacidade_tanque);
+	printf("\n Litros =%f\n",capacidade_tanque);
+	
+		if(A){
+			preco=capacidade_tanque*1.7997;
+			printf("\n\n\a O valor em reais a ser pago e :");
+			printf("\n Valor total=%f\n", preco);
+		}
+		else if(D){
+			preco=capacidade_tanque*0.9798;
+			printf("\n\n\a O valor em reais a ser pago e :");
+			printf("\n Valor total=%f\n", preco);
+       }
+		else{
+			preco=capacidade_tanque*2.1009;
+			printf("\n\n\a O valor em reais a ser pago e :");
+			printf("\n Valor total=%f\n", preco);
+		}
+}

@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<conio.h>
+#include<math.h>
+#include<locale.h>
+
+	void main(){
+		setlocale(LC_ALL, "Portuguese");
+		char sexo_do_individuo;
+		float h,peso_ideal;
+		printf("Digite a letra M se for masculino ou F se for feminino :");
+	    scanf("%c",&sexo_do_individuo);
+	    printf("Digite sua altura em metros:");
+	    scanf("%.2f",&h);
+		if(sexo_do_individuo== 'M'){
+			peso_ideal== (72*h)-58;
+			printf("Entao voce e homem ");
+			printf("O peso ideal para um homem em quilogramas e de  %.2f \n\a\n :  ",peso_ideal);
+		
+		}
+		else{
+			peso_ideal== (62.1*h)-44.7;
+			printf("Entao voce e mulher ");
+			printf("O peso ideal para uma mulher em quilogramas e de  %.2f \n\a\n :  ",peso_ideal);
+
+		}
+	}
+	
